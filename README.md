@@ -130,7 +130,7 @@ Don't rely on endgame, it's chaotic by design!
 - For the final tournament, we will use your most recent submission before the submission deadline
 - Submit though the `mm-cli`. Further instructions in the starterpacks
 
-## Friendly
+## Friendly Tournaments
 
 - Before the bot submission deadline, we will have ongoing **Friendly** tournaments.
 - Our server will run some matches every 30 minutes with bots that have been submitted.

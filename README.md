@@ -107,25 +107,13 @@ During reset:
 
 ## Endgame (Sudden Death)
 
-If tied at the end of regulation:
-1. Field resets one final time
+If tied at the end of regular game play:
+1. Field resets
 2. **Ball has no friction** (keeps moving forever)
-3. **Entire wall becomes the goal** (any wall touch = goal)
+3. **Entire wall becomes the goal**
 4. First goal wins
 
 Don't rely on endgame, it's chaotic by design!
-
-## Timing System
-
-You have a **time budget** measured in "engine ticks":
-
-- **Starting budget:** Large pool of time
-- **Per-turn allowance:** 1000 engine ticks (example)
-- **Refund:** If you use <1000 ticks, unused time goes back to your budget
-- **Penalty:** If you use >1000 ticks, excess is deducted from your budget
-- **Timeout:** If budget hits zero, your turn is skipped (but you still get the 1000 allowance next turn)
-
-**Strategy:** Aim to use <1000 engine ticks per turn to maintain your time budget.
 
 ## Key Strategy Points
 
@@ -135,10 +123,44 @@ You have a **time budget** measured in "engine ticks":
 4. **Defend your goal** - opponents only need one good shot
 5. **Add randomness** - predictable bots get exploited
 
-## Getting Started
+# Tournament
+
+## Submission
+- You can submit a bot at any point in time
+- For the final tournament, we will use your most recent submission before the submission deadline
+- Submit though the `mm-cli`. Further instructions in the starterpacks
+
+## Friendly
+
+- Before the bot submission deadline, we will have ongoing **Friendly** tournaments.
+- Our server will run some matches every 30 minutes with bots that have been submitted.
+- You will be able to see the current leaderboard as well as matches played
+
+## Final Tournament
+- A full round-robin will be played to determine the final score of teams
+- A win is 3 points, a tie is 1, and a loss is 0
+- The more points, the higher rank
+
+# Timing System
+<!-- Your bot has finite time to respond to the engine's request. -->
+<!-- Time will be measured -->
+<!---->
+<!-- You have a **time budget** measured in "engine ticks": -->
+<!---->
+<!-- - **Starting budget:** Large pool of time -->
+<!-- - **Per-turn allowance:** 1000 engine ticks (example) -->
+<!-- - **Refund:** If you use <1000 ticks, unused time goes back to your budget -->
+<!-- - **Penalty:** If you use >1000 ticks, excess is deducted from your budget -->
+<!-- - **Timeout:** If budget hits zero, your turn is skipped (but you still get the 1000 allowance next turn) -->
+<!---->
+<!-- **Strategy:** Aim to use <1000 engine ticks per turn to maintain your time budget. -->
+
+The engine uses a turn-based system to accept your bot's player action inputs. Each turn your bot has a fixed amount of time (relative to the engine's execution speed) to respond, and if your bot times out, the engine will output an error message in the game log.
+
+# Getting Started
 
 Clone a starterpack (Java/Python/Rust) and follow the directions in its README.
 
-## Questions?
+# Questions?
 
 Join the [Discord server](https://discord.gg/tqynrBgcgC) and ask in #ask-a-question-here.

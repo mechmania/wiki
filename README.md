@@ -139,13 +139,6 @@ You have a **time budget** measured in "engine ticks":
 
 Clone a starterpack (Java/Python/Rust) and follow the directions in its README.
 
-## Technical Details
-
-- **No fog of war** - you see everything
-- **Deterministic** - same inputs always produce same outputs (except for the ±10° pass error and tie-breaking)
-- **Turn-based** - no real-time pressure, just time budget management
-- **Collision physics** - players and ball bounce off walls realistically
-
 ## Questions?
 
 Join the [Discord server](https://discord.gg/tqynrBgcgC) and ask in #ask-a-question-here.
